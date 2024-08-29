@@ -1,0 +1,163 @@
+/* 1024 */
+body {
+    margin: 0 20%;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+header {
+    background-color: #808000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11rem;
+}
+
+header img {
+    width: 10rem;
+}
+
+nav {
+    display: flex;
+    margin-right: 2rem;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    border-top: 0.3em solid white;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside, article {
+    width: 30%;
+}
+
+article {
+    width: 90%;
+    margin: 2rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 900px) {
+    /* Poner el nav debajo del header */
+    nav {
+        margin: 0 0 10px 0;
+    }
+
+    li {
+        width: 60px;
+    }
+
+    header {
+        flex-direction: column
+    }
+
+    aside, article {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0 10%;
+    }
+    img{
+        width: 100px;
+    }
+    nav {
+        margin: 0 0 10px 0;
+    }
+
+    li{
+        width: 60px;
+    }
+
+    header {
+        flex-direction: column
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside, article {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    nav {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    li {
+        width: 80%;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        padding: 0 1rem;
+    }
+
+    article {
+        margin: 1rem 0;
+    }
+}
